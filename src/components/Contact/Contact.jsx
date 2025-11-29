@@ -12,16 +12,16 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_axbtt7a",  // Replace with your EmailJS Service ID
-        "template_1ziboq3",  // Replace with your EmailJS Template ID
+        "service_igle4w4",  // Replace with your EmailJS Service ID
+        "template_e0lgd4f",  // Replace with your EmailJS Template ID
         form.current,
-        "Rz7W9pVF0HdDryNNL"  // Replace with your EmailJS Public Key
+        "jbjTcC9691PlRv1tw"  // Replace with your EmailJS Public Key
       )
       .then(
         () => {
           setIsSent(true);
           form.current.reset(); // Reset form fields after sending
-          toast.success("Message sent successfully! ✅", {
+          toast.success("Mail sent successfully! ✅", {
             position: "top-right",
             autoClose: 3000,
             hideProgressBar: false,
@@ -33,7 +33,7 @@ const Contact = () => {
         },
         (error) => {
           console.error("Error sending message:", error);
-          toast.error("Failed to send message. Please try again.", {
+          toast.error("Failed to send mail. Please try again.", {
             position: "top-right",
             autoClose: 3000,
             hideProgressBar: false,
@@ -59,7 +59,7 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-white">CONTACT</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          I’d love to hear from you—reach out for any opportunities or questions!
+          For interviews, opportunities, or professional communication, you can contact me here.
         </p>
       </div>
 
