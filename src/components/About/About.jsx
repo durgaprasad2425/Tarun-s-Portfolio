@@ -101,7 +101,7 @@ const About = () => {
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
+            className="aspect-square w-48 sm:w-64 md:w-[30rem]"
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}
@@ -109,11 +109,13 @@ const About = () => {
             transitionSpeed={1000}
             gyroscope={true}
           >
-            <img
-              src={profileImage}
-              alt="Tarun Kaushik"
-              className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
-            />
+            <div className="w-full h-full rounded-full overflow-hidden border-4 border-purple-700">
+              <img
+                src={profileImage}
+                alt="DurgaPrasad Gollu"
+                className="w-full h-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
+              />
+            </div>
           </Tilt>
         </div>
       </div>

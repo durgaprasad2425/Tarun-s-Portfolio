@@ -9,6 +9,7 @@ import Certifications from "./components/Certification/Certifications";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Certifications />
         <Contact />
         <Footer />
+        <FloatingWhatsApp />
       </div>
 
     </div>

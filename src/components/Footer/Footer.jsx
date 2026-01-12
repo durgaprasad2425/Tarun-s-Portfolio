@@ -54,12 +54,12 @@ const Footer = () => {
               className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110"
             >
               {item.icon}
-            </a>
+            </a>   
           ))}
         </div>
 
         {/* Copyright Text */}
-        <p className="text-sm text-gray-400 mt-6">
+        <p className="text-sm text-gray-400 mt-6">   
           © 2025 DurgaPrasad. All rights reserved.
         </p>
       </div>
